@@ -38,9 +38,11 @@
 
   </style> -->
   <style>
+    
     .filter-nav {
       display: flex;
       align-items: center;
+      gap: 20px;
       flex-wrap: nowrap;
       overflow-x: auto;
       padding: 10px;
@@ -56,15 +58,19 @@
     }
 
     .filter-item img {
-      width: 40px;
-      height: 40px;
-      margin-bottom: 5px;
+      width: 24px;
+      height: 24px;
+      margin-bottom: 10px;
     }
 
-    .filter-item span {
+    .filter-item p {
       display: block;
       font-size: 14px;
       font-weight: 500;
+    }
+
+    .filter-item img:hover, .filter-item p:hover{
+      opacity: 0.5;
     }
 
     .filter-nav::-webkit-scrollbar {
@@ -74,41 +80,120 @@
   </head>
 
   <body>
-    <div class="container mt-4">
+    <div class="container d-flex mt-4">
       <div class="filter-nav">
-        <div class="filter-item"><i class="fa-solid fa-fire"></i>
+        <div class="filter-item"><img src="/images/trending.jpg" alt="">
           <p>Trending</p>
         </div>
-        <div class="filter-item"> <i class="fa-solid fa-bed"></i>
+        <div class="filter-item"> <img src="/images/rooms.jpg" alt="">
           <p>Room</p>
         </div>
-        <div class="filter-item"><i class="fa-solid fa-mountain-city"></i>
-          <p>Iconic city</p>
+        <div class="filter-item"><img src="/images/countryside.jpg" alt="">
+          <p>Country Side</p>
         </div>
-        <div class="filter-item"><i class="fa-solid fa-mountain"></i>
-          <p>Mountains</p>
+        <div class="filter-item"><img src="/images/artic.jpg" alt="">
+          <p>Artics</p>
         </div>
-        <div class="filter-item"> <i class="fa-brands fa-fort-awesome"></i>
+        <div class="filter-item"><img src="/images/beach.jpg" alt="">
+          <p>Beachs</p>
+        </div>
+        <div class="filter-item"><img src="/images/beachfront.jpg" alt="">
+          <p>Beach Front</p>
+        </div>
+        <div class="filter-item"><img src="/images/cabins.jpg" alt="">
+          <p>Cabins</p>
+        </div>
+        <div class="filter-item">
+          <img src="/images/camping.jpg" alt="">
+          <p>Camping</p>
+        </div>
+        <div class="filter-item">
+          <img src="/images/castles.jpg" alt="">
           <p>Castles</p>
         </div>
-        <div class="filter-item"><i class="fa-solid fa-person-swimming"></i>
-          <p>Amazing Pools</p>
+        <div class="filter-item">
+          <img src="/images/cve.jpg" alt="">
+          <p>Cave</p>
         </div>
-        <div class="filter-item"> <i class="fa-solid fa-cow"></i></i>
+        <div class="filter-item">
+          <img src="/images/desert.jpg" alt="">
+          <p>Deserts</p>
+        </div>
+        <div class="filter-item">
+          <img src="/images/design.jpg" alt="">
+          <p>Design</p>
+        </div>
+        <div class="filter-item">
+          <img src="/images/domes.jpg" alt="">
+          <p>Domes</p>
+        </div>
+        <div class="filter-item">
+          <img src="/images/farms.jpg" alt="">
           <p>Farms</p>
         </div>
         <div class="filter-item">
-          <i class="fa-regular fa-snowflake"></i></i>
-          <p>Arctic</p>
+          <img src="/images/golfing.jpg" alt="">
+          <p>Golfing</p>
         </div>
-        <div class="tax-toogle">
-          <div class="form-check-reverse form-switch">
-            <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
-            <label class="form-check-label" for="flexSwitchCheckDefault">Displat total after taxes</label>
-          </div>
+        <div class="filter-item">
+          <img src="/images/historical.jpg" alt="">
+          <p>Historical Houses</p>
+        </div>
+        <div class="filter-item">
+          <img src="/images/island.jpg" alt="">
+          <p>Islands</p>
+        </div>
+        <div class="filter-item">
+          <img src="/images/lake.jpg" alt="">
+          <p>Lakes</p>
+        </div>
+        <div class="filter-item">
+          <img src="/images/lakefront.jpg" alt="">
+          <p>Lake front</p>
+        </div>
+        <div class="filter-item">
+          <img src="/images/luxe.jpg" alt="">
+          <p>Luxe</p>
+        </div>
+        <div class="filter-item">
+          <img src="/images/mansions.jpg" alt="">
+          <p>Mansions</p>
+        </div>
+        <div class="filter-item">
+          <img src="/images/nationalparks.jpg" alt="">
+          <p>National Parks</p>
+        </div>
+        <div class="filter-item">
+          <img src="/images/pool.jpg" alt="">
+          <p>Amazing Pools</p>
+        </div>
+        <div class="filter-item">
+          <img src="/images/sking.jpg" alt="">
+          <p>Skiing</p>
+        </div>
+        <div class="filter-item">
+          <img src="/images/tinyhome.jpg" alt="">
+          <p>Tiny Homes</p>
+        </div>
+        <div class="filter-item">
+          <img src="/images/treehouse.jpg" alt="">
+          <p>Tree House</p>
+        </div>
+        <div class="filter-item">
+          <img src="/images/tropical.jpg" alt="">
+          <p>Tropical</p>
+        </div>
+        <div class="filter-item">
+          <img src="/images/views.jpg" alt="">
+          <p>Amazing Views</p>
         </div>
       </div>
-
+      <div class="tax-toogle">
+        <div class="form-check-reverse form-switch">
+          <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+          <label class="form-check-label" for="flexSwitchCheckDefault">Displat total after taxes</label>
+        </div>
+      </div>
     </div>
 
 
