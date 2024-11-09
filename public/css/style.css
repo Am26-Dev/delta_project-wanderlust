@@ -124,5 +124,5 @@ button, .add-btn{
 /* MAP STYLING */
 #map{
     height: 400px;
-    width: 80vp;
+    width: 80vmax;
 }

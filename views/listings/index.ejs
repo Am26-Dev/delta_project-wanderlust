@@ -1,44 +1,11 @@
 <% layout("/layouts/boilerplate") %>
-  <!-- <style>
-    #filters{
-      display: flex;
-      flex-wrap: wrap;
-      align-items: center;
-    }
-
-    .filter{
-      text-align: center;
-      margin-right: 1.5rem;
-      margin-top: 2rem;
-      opacity: 0.7;
-    }
-
-    .filter:hover{
-      opacity: 1;
-      cursor: pointer;
-    }
-
-    .filter p {
-      font-size: 0.8rem;
-    }
-
-    .tax-info{
-      display: none;
-    }
-
-    .tax-toogle{
-      border-radius: 2rem;
-      height: 3.5rem;
-      border: 1px solid grey;
-      padding: 1rem;
-      margin-left: 6rem;
-      display: flex;
-      align-items: center;
-    }
-
-  </style> -->
   <style>
-    
+    .filter-nav-container {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
     .filter-nav {
       display: flex;
       align-items: center;
@@ -48,6 +15,8 @@
       padding: 10px;
       background-color: #fff;
       box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      scroll-behavior: smooth;
+      white-space: nowrap;
     }
 
     .filter-item {
@@ -69,18 +38,30 @@
       font-weight: 500;
     }
 
-    .filter-item img:hover, .filter-item p:hover{
+    .filter-item img:hover,
+    .filter-item p:hover {
       opacity: 0.5;
     }
 
     .filter-nav::-webkit-scrollbar {
       display: none;
     }
+
+    .tog-tax {
+      transition: all 0.2s ease-in-out;
+    }
+
+    .tog-tax:hover {
+      background-color: #fe424d;
+      color: white;
+    }
   </style>
   </head>
 
   <body>
-    <div class="container d-flex mt-4">
+    <div class="container-fluid d-flex mt-4 gap-5">
+
+
       <div class="filter-nav">
         <div class="filter-item"><img src="/images/trending.jpg" alt="">
           <p>Trending</p>
@@ -188,10 +169,12 @@
           <p>Amazing Views</p>
         </div>
       </div>
+
       <div class="tax-toogle">
-        <div class="form-check-reverse form-switch">
+        <div
+          class="form-check-reverse form-switch tog-tax d-flex flex-row gap-5 align-items-center  border border-danger px-4 py-4 rounded-pill">
           <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
-          <label class="form-check-label" for="flexSwitchCheckDefault">Displat total after taxes</label>
+          <label class="form-check-label text-nowrap" for="flexSwitchCheckDefault">Display total after taxes</label>
         </div>
       </div>
     </div>
@@ -219,6 +202,9 @@
 
 
     <script>
+
+
+
       let taxScwitch = document.getElementById("flexSwitchCheckDefault");
       taxScwitch.addEventListener("click", () => {
         let taxInfo = document.getElementsByClassName("tax-info");
